@@ -417,7 +417,7 @@ async def plant_tree(ctx):
 
 
 @bot.event
-def on_ready():
+async def on_ready():
     print(f"We have logged in as {bot.user}")
 
 
