@@ -416,7 +416,9 @@ async def plant_tree(ctx):
         await ctx.send("Error finding the 'chat' channel. Please contact the server administrator.")
 
 
-
+@bot.event
+def on_ready():
+    print(f"We have logged in as {bot.user}")
 
 
 
